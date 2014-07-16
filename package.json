@@ -10,7 +10,7 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "NODE_PATH=./config:./utility NODE_ENV=production nodemon server.js",
+    "start": "NODE_PATH=./config:./utility NODE_ENV=production node server.js",
     "test": ""
   },
   "dependencies": {
