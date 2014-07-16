@@ -1,0 +1,32 @@
+{
+  "name": "idonethis",
+  "description": "idonethis - plivo tts",
+  "version": "1.0.1",
+  "author": {
+    "name": "plivo tts",
+    "email": "dh@dhfromkorea.com"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "NODE_PATH=./config:./utility NODE_ENV=production node server.js",
+    "test": ""
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "plivo": "latest"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quickcall/quickcall-server.git"
+  },
+  "keywords": [
+    "voice",
+    "dialer"
+  ]
+}
