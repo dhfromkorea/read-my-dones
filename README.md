@@ -1,11 +1,16 @@
 WRITE MY OWN PARSER
 
 technical spec
-- can send an appropriate type of request to dropbox
-- can parse the dones
-- can get the change data (boolean and revision data)
-- can schedule the execution of the script that does polling using cron
++ can fetch done.txt file from Dropbox
++ can parse the dones using regex
++ can save the file to app/dones.txt locally
+- modularizing parser
+- dropbox key token handler
 
+
+- can schedule the fetch at a regular interval
+- can schedule the call
+- can compose a script
 
 functional spec
 - can write todos and mark dones
@@ -26,6 +31,8 @@ find regex match for
 - done date
 - project
 - context  /(?:\W|^)(@)([\S_]+[A-Za-z0-9_](?!\S))/ig;
+
+
 
 
 x Download Todo.txt mobile app @Phone

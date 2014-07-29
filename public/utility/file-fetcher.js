@@ -18,12 +18,6 @@
 
   module.exports.readFile = function(path, callback) {
     var readFile;
-    callback = callback || function(err, data) {
-      if (err) {
-        console.err(err);
-      }
-      return console.log(data);
-    };
     readFile = Promise.promisify(client.readFile).bind(client);
     return readFile(path).then(function(result) {
       return callback(result);

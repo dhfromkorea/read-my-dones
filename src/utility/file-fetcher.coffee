@@ -12,13 +12,7 @@ client = new Dropbox.Client
   token: 'ZT6TIJHZY3kAAAAAAAAUyEAWz0mcR5DIeb5-lsDgWY81WkNOjNbG1dBz5DlqgaOs'
 
 module.exports.readFile = (path, callback) ->
-  callback = callback || (err, data) ->
-    if err
-      console.err err
-    console.log data
-  # not sure if this would work...
   readFile = Promise.promisify(client.readFile).bind client
-
   readFile path
   .then (result) ->
     callback result

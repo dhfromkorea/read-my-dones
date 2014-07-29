@@ -1,14 +1,14 @@
-config = require 'config'
-routes = require 'routes'
+# if needed
+# config = require 'config'
 server = require 'server'
+express = require 'express'
 
-app = server.createServer()
+app = express()
 
-# config
-server.configServer app
-
-# routes
-routes app
+# run middleware
+require('middleware')(app, express)
 
 # listen to port
-server.listenServer app
+port = process.env.PORT or 3000
+app.listen port
+console.log 'listening on', port

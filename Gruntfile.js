@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                 command: 'coffee --compile --watch --output public/ src/'
             },
             start: {
-                command: "NODE_PATH='./public/config:./public/utility:./public/lib' nodemon ./public/server.js"
+                command: "NODE_PATH='./public/config:./public/utility:./public/app' nodemon ./public/server.js"
             }
         }
     });

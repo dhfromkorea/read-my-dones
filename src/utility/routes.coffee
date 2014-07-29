@@ -1,5 +1,4 @@
 phone = require 'call'
-revision = require 'polling'
 
 module.exports = (app) ->
   app.get '/', (req, res) ->

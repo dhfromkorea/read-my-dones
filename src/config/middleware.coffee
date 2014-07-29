@@ -1,14 +1,13 @@
 bodyParser = require 'body-parser'
-express = require 'express'
+routes = require 'routes'
+mainApp = require 'app'
 
-exports.createServer = () ->
-  express()
-
-exports.configServer = (app) ->
+module.exports = (app, express) ->
   app.use bodyParser.urlencoded(extended: true)
   app.use bodyParser.json()
+  # register routes
+  routes(app)
+  # fetch and save the done file
+  # parse the data into JSON
+  mainApp()
 
-exports.listenServer = (app) ->
-  port = process.env.PORT or 3000
-  app.listen port
-  console.log 'listening on', port
