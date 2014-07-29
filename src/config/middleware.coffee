@@ -2,7 +2,7 @@ bodyParser = require 'body-parser'
 express = require 'express'
 
 exports.createServer = () ->
-  express
+  express()
 
 exports.configServer = (app) ->
   app.use bodyParser.urlencoded(extended: true)

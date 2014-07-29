@@ -1,0 +1,9 @@
+x 2014-07-25 2014-07-25 get glasses
+x 2014-07-28 2014-07-25 send money
+x 2014-07-28 2014-07-26 fix eye glasses
+x 2014-07-26 2014-07-26 ask jasen for reference 
+x 2014-07-28 2014-07-27 send Ryan an email about the YC hack
+x 2014-07-28 6 +sideproject @github this is done hopefully
+x 2014-07-28 +plivo @coding write the todo.txt and plivo bridge and make it work
+x 2014-07-28 watch dragonball z @video +relax
+x 2014-07-28 mobile test +coding @github

@@ -1,6 +1,7 @@
-config = require './config/config.js'
-routes = require './utility/routes'
-server = require './config/config.js'
+config = require 'config'
+routes = require 'routes'
+server = require 'server'
+
 app = server.createServer()
 
 # config

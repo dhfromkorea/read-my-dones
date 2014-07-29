@@ -2,11 +2,11 @@
 (function() {
   var app, config, routes, server;
 
-  config = require('./config/config.js');
+  config = require('config');
 
-  routes = require('./utility/routes');
+  routes = require('routes');
 
-  server = require('./config/config.js');
+  server = require('server');
 
   app = server.createServer();
 

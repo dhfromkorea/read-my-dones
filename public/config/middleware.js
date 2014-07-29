@@ -7,7 +7,7 @@
   express = require('express');
 
   exports.createServer = function() {
-    return express;
+    return express();
   };
 
   exports.configServer = function(app) {
